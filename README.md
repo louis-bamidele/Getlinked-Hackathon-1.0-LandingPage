@@ -1,70 +1,86 @@
-# Getting Started with Create React App
+# Hackathon Getlinked Hackathon 1.0 LandingPage
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Table of contents
 
-## Available Scripts
+- [Overview](#overview)
+  - [The features](#the-features)
+  - [developers](#developers)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
 
-In the project directory, you can run:
+## Overview
 
-### `npm start`
+### The features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+UI Coding Challenge to Win N500k Cash or Laptop.💰💻🔥
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+As promised, I’ve got a coding challenge to develop a pixel perfect version of a landing page from a figma link.
 
-### `npm test`
+http://getLinked.ai is proudly sponsoring this coding challenge and it’s open to all developers
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### developers
 
-### `npm run build`
+- Frontend developer: [bamidele louis ](https://github.com/louis-bamidele)
+- Frontend developer: [martins adepoju ](https://github.com/Martinsadepoju4)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Screenshot
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![](./screenshot.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Links
 
-### `npm run eject`
+- Live Site URL: [live site](https://silver-lebkuchen-79cc2f.netlify.app/)
+- Figma design: [link to figma](<https://www.figma.com/file/OlP4rBgsrNVRZe5K6ADXck/Getlinked-(Copy)?type=design&node-id=0%3A1&mode=dev>)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## My process
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Built with
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- React
+- passsport
+- mongoDB
+- Stripe
+- Motion Framer
+- useQuary and alot more
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### What I learned
 
-## Learn More
+I didn't know how to use Stripe, with this project I learned how to do that.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+See code snippets, see below:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```Stripe
+ app.post("/create-checkout-session", async (req, res) => {
+  let listOfData = [];
+  let email = req.body.details.user.email;
+  req.body.cart.map((item) => {
+    let unitAmount = convertToUnitAmount(item.newPrice);
+    listOfData.push({
+      price_data: {
+        currency: "usd",
+        product_data: {
+          name: item.name,
+          images: item.images,
+        },
+        unit_amount: unitAmount,
+      },
+      quantity: item.numOfOrder,
+      adjustable_quantity: {
+        enabled: true,
+      },
+    });
+  });
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+  const session = await stripe.checkout.sessions.create({
+    line_items: listOfData,
+    mode: "payment",
+    success_url: `${YOUR_DOMAIN}/successful`,
+    cancel_url: `${YOUR_DOMAIN}/checkout`,
+    customer_email: email,
+  });
+  res.send(session);
+})
+```
