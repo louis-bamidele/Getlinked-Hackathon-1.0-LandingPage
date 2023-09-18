@@ -1,11 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   --purple-color: #150e28;
   --purple-blue: #903aff;
   --pink: #d434fe;
   --gradient-image: linear-gradient(
     90deg,
-    hsla(312, 66%, 76%, 1) 0%,
-    hsla(234, 93%, 67%, 1) 100%
+    rgba(255, 96, 203, 0.9922093837535014) 3%,
+    rgba(222, 96, 255, 1) 33%,
+    rgba(124, 59, 209, 1) 84%
   );
 }
 body {
