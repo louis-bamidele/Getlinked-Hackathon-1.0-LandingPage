@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import menuIcon from "../assets/Vector.svg";
 import menuX from "../assets/Vector-x.svg";
+import { Link } from "react-router-dom";
 const Nav = () => {
   const menu = useRef(null);
 
@@ -23,8 +24,10 @@ const Nav = () => {
         <li className='nav-text m-auto cursor-pointer'>Timeline</li>
         <li className='nav-text  m-auto cursor-pointer'>Overview</li>
         <li className='nav-text m-auto cursor-pointer'>FAQs</li>
-        <li className='nav-text m-auto cursor-pointer'>Contact</li>
-        <li className='nav-text btn px-8 md:ml-1 lg:ml-20 rounded py-3 cursor-pointer'>
+        <li className='nav-text m-auto cursor-pointer'>
+          <Link to='/contact'>Contact</Link>
+        </li>
+        <li className='nav-text btn md:ml-1 lg:ml-20 cursor-pointer'>
           Register
         </li>
       </ul>
@@ -41,10 +44,10 @@ const Nav = () => {
           <li className='nav-text cursor-pointer'>Timeline</li>
           <li className='nav-text  cursor-pointer'>Overview</li>
           <li className='nav-text cursor-pointer'>FAQs</li>
-          <li className='nav-text cursor-pointer'>Contact</li>
-          <li className='nav-text btn px-8 w-min rounded py-3 cursor-pointer'>
-            Register
+          <li className='nav-text cursor-pointer'>
+            <Link to='/contact'>Contact</Link>
           </li>
+          <li className='nav-text btn  w-min  cursor-pointer'>Register</li>
         </ul>
       </div>
     </nav>

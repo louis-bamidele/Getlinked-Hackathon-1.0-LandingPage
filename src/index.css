@@ -13,6 +13,15 @@
     rgba(124, 59, 209, 1) 84%
   );
 }
+.pink {
+  color: var(--pink);
+}
+.purple-blue {
+  color: var(--purple-blue);
+}
+.purple-color {
+  color: var(--purple-color);
+}
 body {
   margin: 0;
   background-color: var(--purple-color);
