@@ -9,12 +9,12 @@
   -ms-border-radius: 4px;
   -o-border-radius: 4px;
 }
-a {
+.nav-text a {
   color: white;
   font-weight: 800;
 }
-a:hover,
-a.active {
+.nav-text a:hover,
+.nav-text a.active {
   background-image: var(--gradient-image);
   background-clip: text;
   -webkit-background-clip: text;
