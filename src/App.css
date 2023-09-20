@@ -154,7 +154,15 @@ a.active {
 }
 
 /* end of nav styles  */
+/*start of hero styles */
+.hero-man {
+  background-image: url(./assets/man-wearing-smart-glasses-touching-virtual-screen\ 1.png);
+}
+p {
+  font-family: "Montserrat", sans-serif;
+}
 
+/*end of  hero styles */
 /* contact Styles */
 
 .contact {
