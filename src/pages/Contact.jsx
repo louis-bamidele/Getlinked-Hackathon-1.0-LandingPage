@@ -165,6 +165,7 @@ const Contact = () => {
                 name='teamName'
                 placeholder="Teams's name"
                 required
+                pattern='^[A-Za-z ]+$'
               />
               <span className='drop-shadow:lg text-red-800 capitalize err-label'>
                 please type in a valid name without space, special char and
@@ -177,6 +178,7 @@ const Contact = () => {
                 name='topic'
                 placeholder='Topic'
                 required
+                pattern='^(\S+\s*)+$'
               />
               <span className='drop-shadow:lg text-red-800 capitalize err-label'>
                 please type in a valid topic
@@ -188,6 +190,7 @@ const Contact = () => {
                 name='email'
                 placeholder='Email'
                 required
+                pattern='^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$'
               />
               <span className='drop-shadow:lg text-red-800 capitalize err-label'>
                 please type in a valid email e.g "example@gmail.com"
@@ -202,6 +205,7 @@ const Contact = () => {
                 name='name'
                 placeholder='First Name'
                 required
+                pattern='^[A-Za-z ]+$'
               />
               <span className='drop-shadow:lg text-red-800 capitalize err-label'>
                 please type in a valid first name without space, special char
@@ -214,6 +218,7 @@ const Contact = () => {
                 name='email'
                 placeholder='Mail'
                 required
+                pattern='^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$'
               />
               <span className='drop-shadow:lg text-red-800 capitalize err-label'>
                 please type in a valid email e.g "example@gmail.com"
@@ -226,7 +231,8 @@ const Contact = () => {
             className='form-textarea rounded bg-inherit border-slate-50 placeholder:text-slate-50 text-slate-50'
             name='message'
             placeholder='Message'
-            required></textarea>
+            required
+            pattern='^(\S+\s+)+\S+$'></textarea>
           <span className='drop-shadow:lg text-red-800 capitalize err-label'>
             please type more than a word
           </span>

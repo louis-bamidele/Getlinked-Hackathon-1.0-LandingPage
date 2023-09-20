@@ -15,10 +15,12 @@
 }
 .nav-text a:hover,
 .nav-text a.active {
+  animation: all 250ms ease-in-out;
   background-image: var(--gradient-image);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
+  -webkit-animation: all 250ms ease-in-out;
 }
 .btn {
   padding: 0.75rem 2rem;
@@ -33,15 +35,24 @@
   -ms-border-radius: 4px;
   -o-border-radius: 4px;
 }
-.btn:hover,
-.btn.active {
-  /* width: 99%; */
+.btn:hover {
+  opacity: 0.7;
+  animation: opacity 250ms ease-in;
+  -webkit-animation: opacity 250ms ease-in-out;
+}
+.nav-text .btn:hover,
+.nav-text .btn.active {
+  /*width: 99%;
+   */
   border: 2px solid;
+  animation: all 250ms ease-in;
   border-image: var(--gradient-image);
   border-image-slice: 1;
+  opacity: 1;
   color: #fff;
   border-image-source: var(--gradient-image);
   background-image: none;
+  -webkit-animation: all 250ms ease-in;
 }
 .star {
   animation-name: blink;
