@@ -164,6 +164,7 @@ const Contact = () => {
                 type='text'
                 name='teamName'
                 placeholder="Teams's name"
+                required
               />
               <span className='drop-shadow:lg text-red-800 capitalize err-label'>
                 please type in a valid name without space, special char and
@@ -175,6 +176,7 @@ const Contact = () => {
                 type='text'
                 name='topic'
                 placeholder='Topic'
+                required
               />
               <span className='drop-shadow:lg text-red-800 capitalize err-label'>
                 please type in a valid topic
@@ -185,6 +187,7 @@ const Contact = () => {
                 type='email'
                 name='email'
                 placeholder='Email'
+                required
               />
               <span className='drop-shadow:lg text-red-800 capitalize err-label'>
                 please type in a valid email e.g "example@gmail.com"
@@ -198,6 +201,7 @@ const Contact = () => {
                 type='text'
                 name='name'
                 placeholder='First Name'
+                required
               />
               <span className='drop-shadow:lg text-red-800 capitalize err-label'>
                 please type in a valid first name without space, special char
@@ -209,6 +213,7 @@ const Contact = () => {
                 type='email'
                 name='email'
                 placeholder='Mail'
+                required
               />
               <span className='drop-shadow:lg text-red-800 capitalize err-label'>
                 please type in a valid email e.g "example@gmail.com"
@@ -220,7 +225,8 @@ const Contact = () => {
             onChange={(e) => handleInputChange(e)}
             className='form-textarea rounded bg-inherit border-slate-50 placeholder:text-slate-50 text-slate-50'
             name='message'
-            placeholder='Message'></textarea>
+            placeholder='Message'
+            required></textarea>
           <span className='drop-shadow:lg text-red-800 capitalize err-label'>
             please type more than a word
           </span>
