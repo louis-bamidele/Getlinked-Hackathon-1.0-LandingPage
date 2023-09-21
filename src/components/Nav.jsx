@@ -6,11 +6,10 @@ const Nav = () => {
   const menu = useRef(null);
 
   const handleClick = () => {
-    console.log(menu.current);
     menu.current.classList.toggle("BLOCK");
   };
   return (
-    <nav className='md:px-15 lg:mx-20 px-10 flex justify-between text-white py-7 relative'>
+    <nav className='md:px-15 lg:mx-20 px-10 flex justify-between items-center text-white py-7 relative'>
       <h1 className='heading-text cursor-pointer'>
         <Link to='/'>
           get<span className='linked'>linked</span>
@@ -22,7 +21,7 @@ const Nav = () => {
         src={menuIcon}
         alt='menu-icon'
       />
-      <ul className=' gap-7 hidden md:flex items-center'>
+      <ul className=' gap-7 hidden md:flex items-center py-5'>
         <li className='nav-text m-auto cursor-pointer hover:text-[#D434FE] w-max'>
           <Link>Timeline </Link>
         </li>
@@ -66,8 +65,8 @@ const Nav = () => {
                 x2='11.5'
                 y2='23'
                 gradientUnits='userSpaceOnUse'>
-                <stop stop-color='#903AFF' />
-                <stop offset='1' stop-color='#FF26B9' />
+                <stop stopColor='#903AFF' />
+                <stop offset='1' stopColor='#FF26B9' />
               </linearGradient>
             </defs>
           </svg>
@@ -92,8 +91,8 @@ const Nav = () => {
           <li className='nav-text cursor-pointer hover:text-[#D434FE] w-max'>
             <NavLink to='/contact'>Contact</NavLink>
           </li>
-          <li className='nav-text btn-container pt-2  w-min  cursor-pointer'>
-            <NavLink className='btn' to='/register'>
+          <li className='nav-text btn-container pt-2  w-full  cursor-pointer grid place-items-start'>
+            <NavLink className='btn  w-min' to='/register'>
               Register
             </NavLink>
           </li>

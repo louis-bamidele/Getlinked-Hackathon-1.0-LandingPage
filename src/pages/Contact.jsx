@@ -110,8 +110,8 @@ const Contact = () => {
       )}
       <div className='flex flex-col md:flex-row justify-around items-center md:p-20'>
         {!onMobileScreen && (
-          <div className='flex text-base text-white capitalize gap-3 flex-col'>
-            <h3 className='text-3xl font-semibold pink'>Get in touch</h3>
+          <div className=' flex text-base text-white capitalize gap-3 flex-col'>
+            <h3 className=' text-4xl  font-semibold pink'>Get in touch</h3>
             <div>
               <p>contact</p>
               <p> information</p>
@@ -146,10 +146,12 @@ const Contact = () => {
           onSubmit={handleSubmit}
           className='flex flex-col gap-5 py-10 px-12 contact-form md:w-4/12 w-full  md:m-1 '>
           <div>
-            <h5 className='pink text-xl font-bold'>
+            <h5 className='pink text-xl md:text-base lg:text-xl font-bold'>
               Questions or need assistance?
             </h5>
-            <h5 className='pink text-xl font-bold'>Let us know about it!</h5>
+            <h5 className='pink text-xl md:text-base lg:text-xl font-bold'>
+              Let us know about it!
+            </h5>
             {onMobileScreen && (
               <p className='py-5 text-white text-base'>
                 Email us below to any question related to our event

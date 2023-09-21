@@ -1,6 +1,5 @@
 .btn-container {
   display: grid;
-  place-items: center;
   border-radius: 4px;
   width: 100%;
   overflow: hidden;
@@ -22,12 +21,21 @@
   color: transparent;
   -webkit-animation: all 250ms ease-in-out;
 }
+.absolute-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% -50%);
+  -webkit-transform: translate(-50% -50%);
+  -moz-transform: translate(-50% -50%);
+  -ms-transform: translate(-50% -50%);
+  -o-transform: translate(-50% -50%);
+}
 .btn {
-  padding: 0.75rem 2rem;
+  padding: 1rem 3rem;
   cursor: pointer;
   color: #fff;
   border-radius: 4px;
-  width: max-content;
   text-transform: capitalize;
   background-image: var(--gradient-image);
   -webkit-border-radius: 4px;
@@ -35,11 +43,7 @@
   -ms-border-radius: 4px;
   -o-border-radius: 4px;
 }
-.btn:hover {
-  opacity: 0.7;
-  animation: opacity 250ms ease-in;
-  -webkit-animation: opacity 250ms ease-in-out;
-}
+
 .nav-text .btn:hover,
 .nav-text .btn.active {
   /*width: 99%;
@@ -54,11 +58,17 @@
   background-image: none;
   -webkit-animation: all 250ms ease-in;
 }
+.btn:hover {
+  opacity: 0.7;
+  animation: opacity 250ms ease-in;
+  -webkit-animation: opacity 250ms ease-in-out;
+}
 .star {
+  position: absolute;
   animation-name: blink;
   animation-duration: 1000ms;
   animation-timing-function: ease-in-out;
-  animation-delay: 50ms;
+
   animation-iteration-count: infinite;
   animation-direction: alternate-reverse;
 }
@@ -176,12 +186,33 @@ p {
 /*end of  hero styles */
 /* contact Styles */
 
-.contact {
+.contact,
+.register {
   position: relative;
   background-image: url(./assets/Purple-Lens-Flare-1.png),
     url(./assets/Purple-Lens-Flare-2.png);
   background-position: 0 19%, 110% 100%;
   background-repeat: no-repeat, no-repeat;
+}
+.register-walk-box {
+  border-bottom: 2px dotted var(--pink);
+}
+.register-form-sub-heading {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 20px;
+  margin: 15px 0;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.form-input,
+.form-select {
+  height: 60px;
+  border-width: 2px;
+}
+.form-textarea {
+  border-width: 2px;
 }
 .err-label {
   display: none;
@@ -193,10 +224,14 @@ p {
   display: block;
   text-transform: lowercase;
 }
-.invalid-input:focus {
+.invalid-input.form-select:focus {
   border-color: red;
   outline: 1px solid red;
   outline-offset: 1px;
+  background-color: red;
+}
+.invalid-input:focus:placeholder-shown {
+  color: red;
 }
 .contact-pink-star {
   position: absolute;
@@ -222,11 +257,24 @@ p {
   left: 90%;
   animation-delay: 1000ms;
 }
+.emoji::after {
+  content: " ";
+  background-image: url(./assets/1531010992wink-emoji-woman-png\ 1.png);
+  width: 10px;
+  height: 30px;
+  padding-left: 15px;
+  margin-left: 5px;
+  background-repeat: no-repeat;
+}
 @media (max-width: 770px) {
   .contact {
     background-image: url(./assets/Purple-Lens-Flare-1.png);
     background-position: 10% 120%;
     background-repeat: no-repeat;
+  }
+  .register {
+    background-image: url(./assets/Purple-Lens-Flare-1.png);
+    background-position: 0 19%;
   }
   .contact-pink-star {
     position: absolute;
@@ -254,11 +302,32 @@ p {
   }
 }
 @media (min-width: 770px) {
-  .contact-form {
+  .contact-form,
+  .register-form {
     width: 40%;
     border-radius: 12px;
     background: rgba(255, 255, 255, 0.03);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   }
+  .register-form {
+    width: 75%;
+  }
 }
 /* end of contact styles */
+/* random transition delay for stars */
+
+.star1 {
+  animation-delay: 250ms;
+}
+.star2 {
+  animation-delay: 500ms;
+}
+.star3 {
+  animation-delay: 750ms;
+}
+.star4 {
+  animation-delay: 10010ms;
+}
+.star5 {
+  animation-delay: 250ms;
+}
