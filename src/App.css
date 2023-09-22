@@ -176,11 +176,17 @@
 
 /* end of nav styles  */
 /*start of hero styles */
+.first-hero-div {
+  width: 89%;
+}
 .hero-h2 {
   font-family: "Montserrat", sans-serif;
 }
 .hero-h1 {
   font-family: Clash Display;
+  position: relative;
+}
+.hero-star {
   position: relative;
 }
 .hero-man {
@@ -196,10 +202,10 @@
 .hero-h1::after {
   content: url("./assets/chain-9365116-7621444.png");
   display: inline-block;
-  width: 40px;
   height: auto;
   position: absolute;
   top: 40%;
+  scale: 0.8;
 }
 .hero-c-text {
   position: relative;
@@ -207,7 +213,7 @@
 .hero-c-text::after {
   content: url("./assets/Creative\ 1.png");
   display: inline-block;
-  width: auto;
+  scale: 0.8;
   height: auto;
   position: absolute;
   top: -66%;
@@ -218,6 +224,20 @@
 }
 p {
   font-family: "Montserrat", sans-serif;
+}
+@media (min-width: 1250px) {
+  .first-hero-div {
+    width: 58%;
+    margin-top: 50px;
+  }
+  .hero-man-globe {
+    width: 75%;
+  }
+}
+@media (min-width: 1300px) {
+  .hero-man-globe {
+    width: 65%;
+  }
 }
 @media (max-width: 450px) {
   .hero-man {
