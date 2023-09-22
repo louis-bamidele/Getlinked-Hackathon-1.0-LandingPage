@@ -1,3 +1,4 @@
+import React, { useState, useEffect, useRef } from "react";
 import Nav from "../components/Nav";
 import star from "../assets/star.png";
 import vector4 from "../assets/Vector 4.svg";
@@ -11,22 +12,68 @@ import purpleStar from "../assets/star pu.png";
 import pinkStar from "../assets/sata gra.png";
 import "../App.css";
 const Home = () => {
+  const [text, setText] = useState([]);
+  const [index, setIndex] = useState(0);
+  const heroMainTextRef = useRef(null);
+
+  useEffect(() => {
+    const word = [
+      "g",
+      "e",
+      "t",
+      "l",
+      "i",
+      "n",
+      "k",
+      "e",
+      "d",
+      "T",
+      "e",
+      <span className="hero-c-text">c</span>,
+      "h",
+      <br />,
+      "H",
+      "a",
+      "c",
+      "k",
+      "a",
+      "t",
+      "h",
+      "o",
+      "n",
+      <span className="hero-span">1.0</span>,
+    ];
+    if (index < word.length) {
+      const timer = setTimeout(() => {
+        setText((prevText) => [...prevText, word[index]]);
+        setIndex(index + 1);
+      }, 100);
+      return () => clearTimeout(timer);
+    }
+  }, [text]);
   return (
     <div className="App">
       <Nav />
+      <hr className="hr" />
       <div className="font-bold mx-auto text-white lg:pl-20 lg:mx:0 lg:w-auto">
         <h2 className="text-[16px] text-center lg:w-auto lg:pt-4 lg:text-[25px] lg:pr-14 lg:text-right hero-h2">
           igniting a Revolution in HR Innovation
         </h2>
         <div className="pr:0 w-[90vw] m-auto lg:w-auto flex justify-between lg:pr-14 ">
-          <img className="star" src={star} alt="star" />
+          <img className="star hero-star" src={star} alt="star" />
           <img src={vector4} alt="curve line"></img>
         </div>
         <div className="flex flex-col lg:flex-row">
-          <div className="w-[85vw] lg:w-auto m-auto lg:m-0 text-center lg:text-left">
+          <div className="first-hero-div w-[85vw] lg:w-auto m-auto lg:m-0 text-center lg:text-left">
             <div className="relative">
-              <h1 className="mt-6 font-bold relative text-[2.5rem] lg:text-[3.7rem] leading-none hero-h1">
-                getlinked Te<span className="hero-c-text">c</span>h <br />{" "}
+              <h1
+                ref={heroMainTextRef}
+                className="mt-6 font-bold relative text-[2.5rem] lg:text-[3.7rem] leading-none hero-h1"
+              >
+                {text.map((element, index) => (
+                  <React.Fragment key={index}>{element}</React.Fragment>
+                ))}
+                getlinked Te<span className="hero-c-text">c</span>h <br />
                 Hackathon <span className="hero-span">1.0</span>{" "}
               </h1>
             </div>
@@ -52,7 +99,7 @@ const Home = () => {
           </div>
           <div className="w-[95vw] m-auto lg:m-0 hero-man lg:pr-2.5">
             <img
-              className="w-[100%] h-[auto] lg:m-auto lg:w-[65%] lg:h-[90%]"
+              className="hero-man-globe w-[100%] h-[auto] lg:m-auto lg:w-[70%] lg:h-[90%]"
               src={heroGlobeImage}
               alt="hero"
             />

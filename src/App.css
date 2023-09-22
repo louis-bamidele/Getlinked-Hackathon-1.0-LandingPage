@@ -176,11 +176,17 @@
 
 /* end of nav styles  */
 /*start of hero styles */
+.first-hero-div {
+  width: 84%;
+}
 .hero-h2 {
   font-family: "Montserrat", sans-serif;
 }
 .hero-h1 {
   font-family: Clash Display;
+  position: relative;
+}
+.hero-star {
   position: relative;
 }
 .hero-man {
@@ -218,6 +224,20 @@
 }
 p {
   font-family: "Montserrat", sans-serif;
+}
+@media (min-width: 1250px) {
+  .first-hero-div {
+    width: 56%;
+    margin-top: 50px;
+  }
+  .hero-man-globe {
+    width: 75%;
+  }
+}
+@media (min-width: 1300px) {
+  .hero-man-globe {
+    width: 65%;
+  }
 }
 @media (max-width: 450px) {
   .hero-man {
