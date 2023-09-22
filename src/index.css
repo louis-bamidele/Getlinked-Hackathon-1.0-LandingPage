@@ -6,6 +6,7 @@
   --purple-color: #150e28;
   --purple-blue: #903aff;
   --pink: #d434fe;
+  --light-purple: rgba(255, 96, 203, 0.9922093837535014);
   --gradient-image: linear-gradient(
     90deg,
     rgba(255, 96, 203, 0.9922093837535014) 3%,
@@ -16,7 +17,10 @@
 .pink {
   color: var(--pink);
 }
-
+.light-purple {
+  color: var(--light-purple);
+  font-weight: 800;
+}
 .purple-blue {
   color: var(--purple-blue);
 }

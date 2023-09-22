@@ -331,3 +331,15 @@ p {
 .star5 {
   animation-delay: 250ms;
 }
+/* home styles */
+.question-mark {
+  font-family: "MADE TOMMY Outline", sans-serif;
+  color: #d434fe;
+  font-size: 128px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 27.5px;
+}
+.question-mark-smaller {
+  font-size: 97px;
+}
