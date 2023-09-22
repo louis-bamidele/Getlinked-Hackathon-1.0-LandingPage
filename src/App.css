@@ -1,18 +1,134 @@
+.btn-container {
+  display: grid;
+  border-radius: 4px;
+  width: 100%;
+  overflow: hidden;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+.nav-text a {
+  color: white;
+  font-weight: 800;
+}
+.nav-text a:hover,
+.nav-text a.active {
+  animation: all 250ms ease-in-out;
+  background-image: var(--gradient-image);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-animation: all 250ms ease-in-out;
+}
+.absolute-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% -50%);
+  -webkit-transform: translate(-50% -50%);
+  -moz-transform: translate(-50% -50%);
+  -ms-transform: translate(-50% -50%);
+  -o-transform: translate(-50% -50%);
+}
 .btn {
-  padding: 0.75rem 2rem;
-  border-radius: 0.375rem;
+  padding: 1rem 3rem;
   cursor: pointer;
   color: #fff;
-  width: min-content;
+  border-radius: 4px;
   text-transform: capitalize;
   background-image: var(--gradient-image);
-  /* ... */
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+.nav-text .btn:hover,
+.nav-text .btn.active {
+  /*width: 99%;
+   */
+  border: 2px solid;
+  animation: all 250ms ease-in;
+  border-image: var(--gradient-image);
+  border-image-slice: 1;
+  opacity: 1;
+  color: #fff;
+  border-image-source: var(--gradient-image);
+  background-image: none;
+  -webkit-animation: all 250ms ease-in;
+}
+.btn:hover {
+  opacity: 0.7;
+  animation: opacity 250ms ease-in;
+  -webkit-animation: opacity 250ms ease-in-out;
+}
+.star {
+  position: absolute;
+  animation-name: blink;
+  animation-duration: 1000ms;
+  animation-timing-function: ease-in-out;
+
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+
+@-webkit-keyframes blink {
+  0% {
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+  }
+
+  50% {
+    transform: scale(0.5);
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    -o-transform: scale(0.5);
+  }
+
+  100% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+  }
+}
+
+@keyframes blink {
+  0% {
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+  }
+
+  50% {
+    transform: scale(0.5);
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    -o-transform: scale(0.5);
+  }
+
+  100% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+  }
 }
 
 /* nav styles  */
 .heading-text {
   color: #fff;
-  font-family: Clash Display;
+  font-family: "Clash Display", sans-serif;
   font-size: 36px;
   font-style: normal;
   font-weight: 700;
@@ -23,29 +139,24 @@
 }
 .nav-text {
   color: #fff;
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
-.CIRCLE {
-  border-radius: 50%;
-  border-color: var(--gradient-image);
-  border-style: solid;
-  border-width: 3px;
-  padding: 5px;
-  width: 30px;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-  margin-left: auto;
+.RELATIVE {
+  position: relative;
+  padding: 30px 20px;
 }
-.CIRCLE rect {
-  fill: none; /* No fill color for the shape */
-  stroke: var(--gradient-image); /* Apply the gradient as the stroke */
-  stroke-width: 10; /* Adjust the border width */
+.RELATIVE svg,
+.RELATIVE img {
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translate(-50%, -50%);
+  max-width: 100%; /* Ensure the image doesn't exceed the container's width */
+  max-height: 100%;
 }
 .BLOCK {
   display: block;
@@ -56,7 +167,6 @@
 @media (max-width: 640px) {
   .heading-text {
     color: #fff;
-    font-family: Clash Display;
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
@@ -117,26 +227,148 @@ p {
 /*end of  hero styles */
 /* contact Styles */
 
-.contact {
+.contact,
+.register {
+  position: relative;
   background-image: url(./assets/Purple-Lens-Flare-1.png),
     url(./assets/Purple-Lens-Flare-2.png);
-  background-position: 0 19%, 105% 10%;
+  background-position: 0 19%, 110% 100%;
   background-repeat: no-repeat, no-repeat;
 }
-
-@media (max-width: 640px) {
+.register-walk-box {
+  border-bottom: 2px dotted var(--pink);
+}
+.register-form-sub-heading {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 20px;
+  margin: 15px 0;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.form-input,
+.form-select {
+  height: 60px;
+  border-width: 2px;
+}
+.form-textarea {
+  border-width: 2px;
+}
+.err-label {
+  display: none;
+}
+.invalid-input {
+  border-color: red;
+}
+.invalid-input + .err-label {
+  display: block;
+  text-transform: lowercase;
+}
+.invalid-input.form-select:focus {
+  border-color: red;
+  outline: 1px solid red;
+  outline-offset: 1px;
+  background-color: red;
+}
+.invalid-input:focus:placeholder-shown {
+  color: red;
+}
+.contact-pink-star {
+  position: absolute;
+  top: 24%;
+  left: 20%;
+  animation-delay: 50ms;
+}
+.contact-purple-star {
+  position: absolute;
+  top: 70%;
+  left: 48%;
+  animation-delay: 700ms;
+}
+.contact-gray-star {
+  position: absolute;
+  top: 15%;
+  left: 80%;
+  animation-delay: 250ms;
+}
+.contact-white-star {
+  position: absolute;
+  top: 90%;
+  left: 90%;
+  animation-delay: 1000ms;
+}
+.emoji::after {
+  content: " ";
+  background-image: url(./assets/1531010992wink-emoji-woman-png\ 1.png);
+  width: 10px;
+  height: 30px;
+  padding-left: 15px;
+  margin-left: 5px;
+  background-repeat: no-repeat;
+}
+@media (max-width: 770px) {
   .contact {
     background-image: url(./assets/Purple-Lens-Flare-1.png);
     background-position: 10% 120%;
     background-repeat: no-repeat;
   }
+  .register {
+    background-image: url(./assets/Purple-Lens-Flare-1.png);
+    background-position: 0 19%;
+  }
+  .contact-pink-star {
+    position: absolute;
+    top: 10%;
+    left: 42%;
+    animation-delay: 50ms;
+  }
+  .contact-purple-star {
+    position: absolute;
+    top: 90%;
+    left: 8%;
+    animation-delay: 700ms;
+  }
+  .contact-gray-star {
+    position: absolute;
+    top: 23%;
+    left: 80%;
+    animation-delay: 250ms;
+  }
+  .contact-white-star {
+    position: absolute;
+    top: 70%;
+    left: 95%;
+    animation-delay: 1000ms;
+  }
 }
-@media (min-width: 640px) {
-  .contact-form {
+@media (min-width: 770px) {
+  .contact-form,
+  .register-form {
     width: 40%;
     border-radius: 12px;
     background: rgba(255, 255, 255, 0.03);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   }
+  .register-form {
+    width: 75%;
+  }
 }
 /* end of contact styles */
+/* random transition delay for stars */
+
+.star1 {
+  animation-delay: 250ms;
+}
+.star2 {
+  animation-delay: 500ms;
+}
+.star3 {
+  animation-delay: 750ms;
+}
+.star4 {
+  animation-delay: 10010ms;
+}
+.star5 {
+  animation-delay: 250ms;
+}
