@@ -28,11 +28,11 @@ http://getLinked.ai is proudly sponsoring this coding challenge and it’s open 
 
 ### Screenshot
 
-![](./screenshot.png)
+![](./Screenshot.png)
 
 ### Links
 
-- Live Site URL: [live site](https://silver-lebkuchen-79cc2f.netlify.app/)
+- Live Site URL: [live site](https://keen-tarsier-e8bfa2.netlify.app/)
 - Figma design: [link to figma](<https://www.figma.com/file/OlP4rBgsrNVRZe5K6ADXck/Getlinked-(Copy)?type=design&node-id=0%3A1&mode=dev>)
 
 ## My process
