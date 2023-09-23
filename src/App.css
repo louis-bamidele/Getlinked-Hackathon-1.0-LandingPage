@@ -260,18 +260,6 @@ p {
     bottom: 200%;
   }
 }
-@media (min-width: 450px) {
-  .hero-h1::after {
-    top: 0;
-    right: 20%;
-    scale: 0.5;
-  }
-  .hero-c-text::after {
-    scale: 0.5;
-    left: -50%;
-    bottom: 200%;
-  }
-}
 
 /*end of  hero styles */
 /* contact Styles */
