@@ -69,7 +69,11 @@ const Home = () => {
   }, [text]);
 
   return (
+<<<<<<< HEAD
     <div className='app'>
+=======
+    <div className="App">
+>>>>>>> 6e8d653158bd4d448da74936069817251b15a05a
       <Nav />
 
       <hr className='hr' />
@@ -100,45 +104,221 @@ const Home = () => {
               </h1>
             </div>
 
+<<<<<<< HEAD
             <p className='text-[13px] lg:text-sm'>
+=======
+            <p className="lg:w-[80%] text-[13px] lg:text-sm hero-p">
+>>>>>>> 6e8d653158bd4d448da74936069817251b15a05a
               Participate in getlinked tech Hackathon 2023 stand a chance to win
               a Big prize
             </p>
-            <button className='nav-text btn my-8 w-min  cursor-pointer'>
+            <button className="nav-text btn my-8 w-min  cursor-pointer">
               Register
             </button>
 
+<<<<<<< HEAD
             <div className='text-center m-auto lg:m-0 flex justify-between text-[38px] w-[214px] h-[64px] lg:text-[2rem] lg:w-[200px] lg:h-[85px]'>
+=======
+            <div className="text-center m-auto lg:m-0 flex justify-between text-[38px] w-[214px] h-[64px] lg:text-[2rem] lg:w-[200px] lg:h-[85px]">
+>>>>>>> 6e8d653158bd4d448da74936069817251b15a05a
               <h1>
-                00<span className='text-sm'>H</span>
+                00<span className="text-sm">H</span>
               </h1>
               <h1>
-                00<span className='text-sm'>M</span>
+                00<span className="text-sm">M</span>
               </h1>
               <h1>
-                00<span className='text-sm'>S</span>
+                00<span className="text-sm">S</span>
               </h1>
             </div>
           </div>
-          <div className='w-[95vw] m-auto lg:m-0 hero-man lg:pr-2.5'>
+          <div className="w-[95vw] m-auto lg:m-0 hero-man lg:pr-2.5">
             <img
+<<<<<<< HEAD
               className='hero-man-globe w-[100%] h-full lg:m-auto lg:w-[70%] lg:h-[90%]'
+=======
+              className="hero-man-globe w-[100%] h-[auto] lg:m-auto lg:w-[70%] lg:h-[90%]"
+>>>>>>> 6e8d653158bd4d448da74936069817251b15a05a
               src={heroGlobeImage}
-              alt='hero'
+              alt="hero"
             />
           </div>
         </div>
       </div>
+<<<<<<< HEAD
       <Introduction />
 
       <div className='relative flex flex-col md:flex-row justify-between items-center gap-10 lg:gap-5 lg:px-36 md:px-10 py-20 z-10'>
         <img
           className='star star4 top-[5%] left-[27%] md:top-[13%] md:left-[10%]'
-          src={purpleStar}
-          alt='purple star'
+=======
+      <div className="relative flex flex-col md:flex-row justify-between items-center gap-10 lg:gap-5 lg:px-36 md:px-10 py-10 ">
+        <img
+          className="star star3 top-[20%] left-[10%] md:top-[40%] md:left-[10%]"
+          src={pinkStar}
+          alt="pink star"
         />
+        <img
+          className="star star1 top-[40%] left-[80%] md:top-[40%] md:left-[90%]"
+>>>>>>> 6e8d653158bd4d448da74936069817251b15a05a
+          src={purpleStar}
+          alt="purple star"
+        />
+<<<<<<< HEAD
         <div className='w-[70%] lg:w-[50%] text-slate-50 text-center md:text-left'>
           <h3 className='pb-1 font-black text-2xl md:text-3xl'>
+=======
+        <div className="w-[60%] md:w-[50%] lg:w-[40%] relative">
+          <img
+            className="w-full"
+            src={theBigIdea}
+            alt="a big light bulb indicating a big idea "
+          />
+          <img
+            className="absolute  w-[20%] md:bottom-0 -bottom-10 right-[40%] md:right-[-10%]"
+            src={arrow}
+            alt="arrow"
+          />
+          <p className="text-slate-50 absolute w-[20%] h-[10%] text-center left-[40%] top-[50%] translate-x[-50%] translate-y[-50%]">
+            The big idea
+          </p>
+        </div>
+
+        <div className="w-[70%] lg:w-[50%] text-slate-50 text-center md:text-left">
+          <h3 className="pb-1 font-black text-2xl md:text-3xl">
+            Introduction to getlinked
+          </h3>
+
+          <h3 className="pb-3 pink font-black text-2xl md:text-3xl">
+            tech Hackathon 1.0
+          </h3>
+          <p>
+            Our tech hackathon is a melting pot of visionaries, and its purpose
+            is as clear as day: to shape the future. Whether you're a coding
+            genius, a design maverick, or a concept wizard, you'll have the
+            chance to transform your ideas into reality. Solving real-world
+            problems, pushing the boundaries of technology, and creating
+            solutions that can change the world, that's what we're all about!
+          </p>
+        </div>
+      </div>
+      <div className="relative rules-reg text-slate-50 flex flex-col-reverse md:flex-row justify-between items-center gap-10 lg:gap-5 lg:px-36 md:px-10 py-10 ">
+        <img
+          className="star star3 top-[20%] left-[10%] md:top-[20%] md:left-[25%]"
+          src={grayStar}
+          alt="gray star"
+        />
+        <img
+          className="star star1 top-[49%] left-[80%] md:top-[60%] md:left-[47%]"
+          src={whiteStar}
+          alt="white star"
+        />
+        <div className="w-[70%] lg:w-[50%] text-slate-50 text-center md:text-left">
+          <h3 className=" font-black text-2xl md:text-3xl">Rules and</h3>
+          <h3 className="pb-3 pink font-black text-2xl md:text-3xl">
+            Guidelines
+          </h3>
+          <p>
+            Our tech hackathon is a melting pot of visionaries, and its purpose
+            is as clear as day: to shape the future. Whether you're a coding
+            genius, a design maverick, or a concept wizard, you'll have the
+            chance to transform your ideas into reality. Solving real-world
+            problems, pushing the boundaries of technology, and creating
+            solutions that can change the world, that's what we're all about!
+          </p>
+        </div>
+        <div className="w-[80%] md:w-[60%]  relative">
+          <img
+            className="relative z-10"
+            src={womanSitting}
+            alt="woman sitting on a chair"
+          />
+          <img
+            className="absolute top-[12%] right-[15%] z-0 hidden md:block"
+            src={circle}
+            alt="circle filled with purple and blue gradient "
+          />
+        </div>
+      </div>
+      <div className="relative flex flex-col md:flex-row justify-between items-center gap-10 lg:gap-5 lg:px-36 md:px-10 py-10 z-10">
+        <img
+          className="star star1 top-[90%] left-[80%] md:top-[83%] md:left-[47%]"
+          src={whiteStar}
+          alt="white star"
+        />
+        <img
+          className="star star5 top-[15%] left-[50%] md:top-[42%] md:left-[33%]"
+          src={grayStar}
+          alt="gray star"
+        />
+        <img
+          className="star star3 top-[1%] left-[50%] md:top-0 md:left-[20%]"
+          src={purpleStar}
+          alt="purple star"
+        />
+        <div className="w-[60%]  relative ">
+          <img
+            className="z-[2] relative"
+            src={manStanding}
+            alt="a man holding a file and standing beside a woman "
+          />
+          <img
+            className="absolute -top-8 left-10 z-[0] hidden md:block"
+            src={circle}
+            alt="circle filled with purple and blue gradient "
+          />
+        </div>
+        <div className="w-[70%] lg:w-[50%] text-slate-50 text-center md:text-left">
+          <h3 className="pb-1 font-black text-2xl md:text-3xl">
+            Judging Criteria
+          </h3>
+          <h3 className="pb-3 pink font-black text-2xl md:text-3xl">
+            Key attributes
+          </h3>
+          <p className="pb-5 text-xs">
+            <span className="light-purple">Innovation and Creativity: </span>
+            Evaluate the uniqueness and creativity of the solution. Consider
+            whether it addresses a real-world problem in a novel way or
+            introduces innovative features
+          </p>
+          <p className="pb-5 text-xs">
+            <span className="light-purple">Functionality: </span>Assess how well
+            the solution works. Does it perform its intended functions
+            effectively and without major issues? Judges would consider the
+            completeness and robustness of the solution.
+          </p>
+          <p className="pb-5 text-xs">
+            <span className="light-purple">Impact and Relevance: </span>
+            Determine the potential impact of the solution in the real world.
+            Does it address a significant problem, and is it relevant to the
+            target audience? Judges would assess the potential social, economic,
+            or environmental benefits.
+          </p>
+          <p className="pb-5 text-xs">
+            <span className="light-purple">Technical Complexity: </span>
+            Evaluate the technical sophistication of the solution. Judges would
+            consider the complexity of the code, the use of advanced
+            technologies or algorithms, and the scalability of the solution.
+          </p>
+          <p className="pb-5 text-xs">
+            <span className="light-purple">Adherence to Hackathon Rules: </span>
+            Judges will Ensure that the team adhered to the rules and guidelines
+            of the hackathon, including deadlines, use of specific technologies
+            or APIs, and any other competition-specific requirements.
+          </p>
+          <button className="btn">Read More</button>
+        </div>
+      </div>
+
+      <div className="relative flex flex-col md:flex-row justify-between items-center gap-10 lg:gap-5 lg:px-36 md:px-10 py-20 z-10">
+        <img
+          className="star star4 top-[5%] left-[27%] md:top-[13%] md:left-[10%]"
+          src={purpleStar}
+          alt="purple star"
+        />
+        <div className="w-[70%] lg:w-[50%] text-slate-50 text-center md:text-left">
+          <h3 className="pb-1 font-black text-2xl md:text-3xl">
+>>>>>>> 6e8d653158bd4d448da74936069817251b15a05a
             Frequently Ask
           </h3>
           <h3 className='pb-3 pink font-black text-2xl md:text-3xl'>
@@ -311,115 +491,204 @@ const Home = () => {
           </div>
         </div>
       </div>
+<<<<<<< HEAD
 
       <hr />
       <Prize />
       <div className=' text-slate-50 relative flex flex-col gap-3 p-10 md:p-20 py-32 items-center'>
+=======
+      <hr />
+      <div className="relative flex flex-col py-20">
         <img
-          className='star star2 top-[80%] left-[86%] md:top-[70%] md:left-[50%] '
+          className="star star3 top-[90%] left-[65%]  md:top-[85%] md:left-[78%]"
+          src={grayStar}
+          alt="gray star"
+        />
+
+        <img
+          className="star star1 top-[60%] left-[80%] md:top-[45%] md:left-[89%]"
           src={whiteStar}
-          alt='white star'
+          alt="white star"
         />
         <img
-          className='star star5 top-[60%] left-[50%] md:top-[30%] md:left-[6%]'
+          className="star star3 top-[39%] left-[53%]"
+          src={whiteStar}
+          alt="white star"
+        />
+        <img
+          className="star star2 top-[55%] left-[16%] md:top-[94%] md:left-[16%]"
+          src={whiteStar}
+          alt="white star"
+        />
+        <img
+          className="star star5 top-[10%] left-[70%] md:top-[15%] md:left-[80%]"
           src={pinkStar}
-          alt='pink star'
+          alt="pink star"
         />
         <img
-          className='star star4 top-[40%] left-[7%] md:top-[40%] md:left-[50%]'
+          className="star star4 top-[3%] left-[7%] md:top-[13%] md:left-[10%]"
           src={purpleStar}
-          alt='purple star'
+          alt="purple star"
         />
-        <h3 className='font-bold text-3xl text-center'>
-          Partners and Sponsors
-        </h3>
-        <p className='leading-7 text-center w-[100%] md:w-[45%] pb-10'>
-          Getlinked Hackathon 1.0 is honored to have the following major
-          companies as its partners and sponsors
-        </p>
-        <div className='sponsors-border w-full h-min m-5 md:m-20 '>
-          <div className='grid grid-cols-3 place-content-center place-items-center sm:p-5  md:p-20'>
-            <div className='w-full p-5 left-line h-full'>
-              <img className='  m-auto' src={libertyLogo} alt='liberty logo' />
-            </div>
-            <div className='w-full p-5 left-line h-full'>
+        <div className=" px-5 text-slate-50 text-center md:text-left flex justify-center items-center  md:justify-end md:items-end text-left md:mr-10 lg:mr-28">
+          <div>
+            <h3 className="pb-1 font-black text-4xl md:text-3xl">Prizes and</h3>
+            <h3 className="pb-3 pink font-black text-4xl md:text-3xl">
+              Rewards
+            </h3>
+            <p className="text-2xl md:text-base">
+              Highlight of the prizes or rewards for winners and for
+              participants.
+            </p>
+          </div>
+        </div>
+        <div className="flex flex-col md:flex-row gap-3  justify-center  items-center md:items-end pt-20">
+          <img
+            className="w-[90%] md:w-[50%] lg:w-[40%] mb-28 md:mb-0 md:p-10 lg:p-0"
+            src={cup}
+            alt="a big cup for celebration"
+          />
+          <div className="flex justify-center gap-7 w-[100%] md:w-[50%] p-10 mt-32 md:mt-0 ">
+            <div className="w-[30%] text-slate-50 pink-border relative h-min   px-0  pt-16 pb-10 md:w-[45%] lg:w-[30%] flex flex-col items-center justify-center">
               <img
-                className='  md:ml-auto m-auto p-1 mt-[10%] md:w-full'
-                src={libertyPayLogo}
-                alt='liberty pay  logo'
+                className="max-w-none w-[100%] md:w-[100px] lg:w-[130px] xl:w-[150px] absolute bottom-[70%]"
+                src={silver}
+                alt="silver medal"
               />
+              <h2 className="font-bold">2nd</h2>
+              <p>Runner</p>
+              <h4 className="px-2 font-bold pink">N300,000</h4>
             </div>
-
-            <div className='w-full p-5  h-full'>
-              <img className='  m-auto' src={winWiseLogo} alt='win wise logo' />
-            </div>
-            <div className='top-line w-full p-5 left-line h-full'>
+            <div className="w-[30%] mt-3 text-slate-50 purple-border relative h-min px-0    pt-16 pb-10 md:w-[45%] lg:w-[30%] flex flex-col items-center justify-center">
               <img
-                className='   m-auto'
-                src={whisperLogo}
-                alt='whispersms logo'
+                className="max-w-none w-[130%] md:w-[150px] lg:w-[180px] xl:w-[210px] absolute bottom-[70%]"
+                src={gold}
+                alt="gold medal"
               />
+              <h2 className="font-bold">1st</h2>
+              <p>Runner</p>
+              <h4 className="px-2 font-bold purple-blue">N400,000</h4>
             </div>
-            <div className='top-line w-full p-5 left-line h-full'>
-              <img className='m-auto w-min ' src={paybox} alt='paybox logo' />
-            </div>
-
-            <div className='top-line w-full p-5  h-full'>
-              <img className='m-auto w-min' src={vusual} alt='vusual logo' />
+            <div className="w-[30%] text-slate-50 pink-border relative h-min   px-0  pt-16 pb-10 md:w-[45%] lg:w-[30%] flex flex-col items-center justify-center">
+              <img
+                className="max-w-none w-[100%] md:w-[100px] lg:w-[130px] xl:w-[150px] absolute bottom-[70%]"
+                src={bronze}
+                alt="bronze medal"
+              />
+              <h2 className="font-bold">3rd</h2>
+              <p>Runner</p>
+              <h4 className="px-2 font-bold pink">N150,000</h4>
             </div>
           </div>
         </div>
       </div>
-      <div className='privacy relative flex flex-col lg:flex-row p-10 md:p-20'>
+      <div className=" text-slate-50 relative flex flex-col gap-3 p-10 md:p-20 py-32 items-center">
+>>>>>>> 6e8d653158bd4d448da74936069817251b15a05a
         <img
-          className='star star2 top-[80%] left-[86%] md:top-[20%] md:left-[90%] '
+          className="star star2 top-[80%] left-[86%] md:top-[70%] md:left-[50%] "
           src={whiteStar}
-          alt='white star'
+          alt="white star"
         />
         <img
-          className='star star5 top-[80%] left-[86%] md:top-[65%] md:left-[60%] '
+          className="star star5 top-[60%] left-[50%] md:top-[30%] md:left-[6%]"
+          src={pinkStar}
+          alt="pink star"
+        />
+        <img
+          className="star star4 top-[40%] left-[7%] md:top-[40%] md:left-[50%]"
+          src={purpleStar}
+          alt="purple star"
+        />
+        <h3 className="font-bold text-3xl text-center">
+          Partners and Sponsors
+        </h3>
+        <p className="leading-7 text-center w-[100%] md:w-[45%] pb-10">
+          Getlinked Hackathon 1.0 is honored to have the following major
+          companies as its partners and sponsors
+        </p>
+        <div className="sponsors-border w-full h-min m-5 md:m-20 ">
+          <div className="grid grid-cols-3 place-content-center place-items-center sm:p-5  md:p-20">
+            <div className="w-full p-5 left-line h-full">
+              <img className="  m-auto" src={libertyLogo} alt="liberty logo" />
+            </div>
+            <div className="w-full p-5 left-line h-full">
+              <img
+                className="  md:ml-auto m-auto p-1 mt-[10%] md:w-full"
+                src={libertyPayLogo}
+                alt="liberty pay  logo"
+              />
+            </div>
+
+            <div className="w-full p-5  h-full">
+              <img className="  m-auto" src={winWiseLogo} alt="win wise logo" />
+            </div>
+            <div className="top-line w-full p-5 left-line h-full">
+              <img
+                className="   m-auto"
+                src={whisperLogo}
+                alt="whispersms logo"
+              />
+            </div>
+            <div className="top-line w-full p-5 left-line h-full">
+              <img className="m-auto w-min " src={paybox} alt="paybox logo" />
+            </div>
+
+            <div className="top-line w-full p-5  h-full">
+              <img className="m-auto w-min" src={vusual} alt="vusual logo" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="privacy relative flex flex-col lg:flex-row p-10 md:p-20">
+        <img
+          className="star star2 top-[80%] left-[86%] md:top-[20%] md:left-[90%] "
           src={whiteStar}
-          alt='white star'
+          alt="white star"
         />
         <img
-          className='star star4 top-[20%] left-[10%] md:top-[8%] md:left-[25%]'
+          className="star star5 top-[80%] left-[86%] md:top-[65%] md:left-[60%] "
+          src={whiteStar}
+          alt="white star"
+        />
+        <img
+          className="star star4 top-[20%] left-[10%] md:top-[8%] md:left-[25%]"
           src={grayStar}
-          alt='gray star'
+          alt="gray star"
         />
         <img
-          className='star star3 top-[20%] left-[10%] md:top-[70%] md:left-[90%]'
+          className="star star3 top-[20%] left-[10%] md:top-[70%] md:left-[90%]"
           src={grayStar}
-          alt='gray star'
+          alt="gray star"
         />
         <img
-          className='star star1 top-[60%] left-[50%] md:top-[b0%] md:left-[3%]'
+          className="star star1 top-[60%] left-[50%] md:top-[b0%] md:left-[3%]"
           src={pinkStar}
-          alt='pink star'
+          alt="pink star"
         />
         <img
-          className='star star5 top-[60%] left-[50%] md:top-[55%] md:left-[65%]'
+          className="star star5 top-[60%] left-[50%] md:top-[55%] md:left-[65%]"
           src={pinkStar}
-          alt='pink star'
+          alt="pink star"
         />
 
         <img
-          className='star star4 top-[40%] left-[7%] md:top-[20%] md:left-[50%]'
+          className="star star4 top-[40%] left-[7%] md:top-[20%] md:left-[50%]"
           src={purpleStar}
-          alt='purple star'
+          alt="purple star"
         />
-        <div className='text-slate-50 text-center lg:text-left w-full lg:w-[50%]'>
-          <h3 className='font-semibold text-2xl'>
-            Privacy Policy and <br /> <span className='pink'>Terms</span>
+        <div className="text-slate-50 text-center lg:text-left w-full lg:w-[50%]">
+          <h3 className="font-semibold text-2xl">
+            Privacy Policy and <br /> <span className="pink">Terms</span>
           </h3>
-          <p className='text-sm lg:text-[9px] py-3'>
+          <p className="text-sm lg:text-[9px] py-3">
             Last updated on September 12, 2023
           </p>
-          <p className='py-3 text-sm lg:text-[11px] lg:pr-[20%] mb-10'>
+          <p className="py-3 text-sm lg:text-[11px] lg:pr-[20%] mb-10">
             Below are our privacy & policy, which outline a lot of goodies. it’s
             our aim to always take of our participant
           </p>
-          <div className='text-sm privacy-box p-10'>
-            <p className=' pb-3'>
+          <div className="text-sm privacy-box p-10">
+            <p className=" pb-3">
               At getlinked tech Hackathon 1.0, we value your privacy and are
               committed to protecting your personal information. This Privacy
               Policy outlines how we collect, use, disclose, and safeguard your
@@ -427,42 +696,46 @@ const Home = () => {
               participating in our event, you consent to the practices described
               in this policy.
             </p>
-            <p className='pink text-sm text-left pb-2'>Licensing Policy</p>
-            <p className='pb-2 text-left'>
+            <p className="pink text-sm text-left pb-2">Licensing Policy</p>
+            <p className="pb-2 text-left">
               Here are terms of our Standard License:
             </p>
-            <div className='flex gap-2 items-start pb-3 text-sm'>
-              <img src={listCheck} alt='checkbox' />
-              <p className='text-left'>
+            <div className="flex gap-2 items-start pb-3 text-sm">
+              <img src={listCheck} alt="checkbox" />
+              <p className="text-left">
                 The Standard License grants you a non-exclusive right to
                 navigate and register for our event
               </p>
             </div>
-            <div className='flex gap-2  items-start pb-3 text-sm'>
-              <img src={listCheck} alt='checkbox' />
-              <p className='text-left'>
+            <div className="flex gap-2  items-start pb-3 text-sm">
+              <img src={listCheck} alt="checkbox" />
+              <p className="text-left">
                 You are licensed to use the item available at any free source
                 sites, for your project developement
               </p>
             </div>
-            <div className='text-center'>
-              <button className='btn mx-auto my-3 text-center'>
+            <div className="text-center">
+              <button className="btn mx-auto my-3 text-center">
                 Reach More
               </button>
             </div>
           </div>
         </div>
-        <div className='relative w-full lg:w-[50%] p-10 mt-[30%] lg:mt-[0px] z-[4]'>
+        <div className="relative w-full lg:w-[50%] p-10 mt-[30%] lg:mt-[0px] z-[4]">
           <img
-            className='w-full relative z-[4]'
+            className="w-full relative z-[4]"
             src={padLock}
-            alt='padlock and key'
+            alt="padlock and key"
           />
+<<<<<<< HEAD
           <div className='absolute CENTER top-[-10%] sm:top-[-15%]  md:left-[20%]  z-[3]'>
+=======
+          <div className="absolute top-[-10%] sm:top-[-15%]  md:left-[20%]  z-[3]">
+>>>>>>> 6e8d653158bd4d448da74936069817251b15a05a
             <img
-              className='lg:w-[150%] w-[110%] md:w-[120%] max-w-none'
+              className="lg:w-[150%] w-[110%] md:w-[120%] max-w-none"
               src={secured}
-              alt='secured icon'
+              alt="secured icon"
             />
           </div>
         </div>
