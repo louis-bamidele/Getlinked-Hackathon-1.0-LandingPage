@@ -242,7 +242,7 @@ p {
     width: 65%;
   }
 }
-@media (min-width: 200px) {
+@media (max-width: 450px) {
   .first-hero-div {
     width: 75%;
   }
