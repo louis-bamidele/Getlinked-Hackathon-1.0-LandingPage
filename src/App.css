@@ -24,9 +24,17 @@
   -ms-transform: translateX(-50%);
   -o-transform: translateX(-50%);
 }
-.HERO {
+.App {
   background-image: url(./assets/hero.png);
   background-position: -10% 0;
+  background-repeat: no-repeat;
+}
+.INTRODUCTION {
+  background-image: url(./assets/Purple-Lens-Flare-PN.png),
+    url(./assets/Purple-Lens-Flare-PNG3.png),
+    url(./assets/Purple-Lens-Flare-PNG4.png),
+    url(./assets/Purple-Lens-Flare-PNG5.png);
+  background-position: 20% 18%, 100% 35%, 0 70%, 100% 90%;
   background-repeat: no-repeat;
 }
 .prize {
@@ -34,10 +42,37 @@
   background-position: 0 0;
   background-repeat: no-repeat;
 }
-@media (min-width: 640px) {
+.LAST {
+  background-image: url(./assets/Purple-Lens-Flare-PNG6.png),
+    url(./assets/Purple-Lens-Flare-PNG7.png),
+    url(./assets/Purple-Lens-Flare-PNG8.png);
+  background-position: 0 33%, 100% 67%, -5% 120%;
+  background-repeat: no-repeat;
+}
+@media (max-width: 640px) {
+  .App {
+    background-image: url(./assets/Purple-Lens-Flare-1x.png);
+    background-position: -10% 0;
+    background-repeat: no-repeat;
+  }
+  .INTRODUCTION {
+    background-image: url(./assets/Purple-Lens-Flare-2x.png),
+      url(./assets/Purple-Lens-Flare-3x.png),
+      url(./assets/Purple-Lens-Flare-4x.png),
+      url(./assets/Purple-Lens-Flare-5x.png);
+    background-position: 20% 22%, 100% 30%, 0 51%, 100% 75%;
+    background-repeat: no-repeat;
+  }
   .prize {
-    background-image: url(./assets/jjpremium_photo-1664443577580-dd2674e9d359\ 1.png);
+    background-image: url(./assets/vv.png);
     background-position: 0 0;
+    background-repeat: no-repeat;
+  }
+  .LAST {
+    background-image: url(./assets/Purple-Lens-Flare-6x.png),
+      url(./assets/Purple-Lens-Flare-7x.png),
+      url(./assets/Purple-Lens-Flare-8x.png);
+    background-position: 0 32%, 100% 47%, -5% 83%;
     background-repeat: no-repeat;
   }
 }

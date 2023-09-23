@@ -8,11 +8,12 @@ import arrow from "../assets/arrow.png";
 import womanSitting from "../assets/7450159 1.png";
 import manStanding from "../assets/8046554 1.png";
 import circle from "../assets/Ellipse 2.svg";
+import manSittingCloud from "../assets/cwok_casual_21 1.png";
 
 const Introduction = () => {
   return (
-    <>
-      <div className='relative flex flex-col md:flex-row justify-between items-center gap-10 lg:gap-5 lg:px-36 md:px-10 py-10 '>
+    <div className='INTRODUCTION'>
+      <div className='relative  flex flex-col md:flex-row justify-between items-center gap-10 lg:gap-5 lg:px-36 md:px-10 py-10 '>
         <img
           className='star star3 top-[20%] left-[10%] md:top-[40%] md:left-[10%]'
           src={pinkStar}
@@ -57,7 +58,7 @@ const Introduction = () => {
           </p>
         </div>
       </div>
-      <div className='relative rules-reg text-slate-50 flex flex-col-reverse md:flex-row justify-between items-center gap-10 lg:gap-5 lg:px-36 md:px-10 py-10 '>
+      <div className='relative  rules-reg text-slate-50 flex flex-col-reverse md:flex-row justify-between items-center gap-10 lg:gap-5 lg:px-36 md:px-10 py-10 '>
         <img
           className='star star3 top-[20%] left-[10%] md:top-[20%] md:left-[25%]'
           src={grayStar}
@@ -164,7 +165,97 @@ const Introduction = () => {
           <button className='btn'>Read More</button>
         </div>
       </div>
-    </>
+      <div className='relative flex flex-col md:flex-row justify-between items-center gap-10 lg:gap-5 lg:px-36 md:px-10 py-20 z-10'>
+        <img
+          className='star star4 top-[5%] left-[27%] md:top-[13%] md:left-[10%]'
+          src={purpleStar}
+          alt='purple star'
+        />
+        <div className='w-[70%] lg:w-[50%] text-slate-50 text-center md:text-left'>
+          <h3 className='pb-1 font-black text-2xl md:text-3xl'>
+            Frequently Ask
+          </h3>
+          <h3 className='pb-3 pink font-black text-2xl md:text-3xl'>
+            Question
+          </h3>
+          <p className='pb-5 text-sm'>
+            We got answers to the questions that you might want to ask about
+            getlinked Hackathon 1.0
+          </p>
+          <div>
+            <div className='flex border-b-2 border-solid border-[#D434FE] justify-between items-center pb-1'>
+              <p className='text-sm'>
+                Can I work on a project I started before the hackathon?
+              </p>
+              <p className='text-[#D434FE] text-3xl'>+</p>
+            </div>
+            <div className='flex border-b-2 border-solid border-[#D434FE] justify-between items-center pb-1'>
+              <p className='text-sm'>
+                What happens if I need help during the hackathon?
+              </p>
+              <p className='text-[#D434FE] text-3xl'>+</p>
+            </div>
+            <div className='flex border-b-2 border-solid border-[#D434FE] justify-between items-center pb-1'>
+              <p className='text-sm'>
+                What happens if I don't have an idea for a project?
+              </p>
+              <p className='text-[#D434FE] text-3xl'>+</p>
+            </div>
+            <div className='flex border-b-2 border-solid border-[#D434FE] justify-between items-center pb-1'>
+              <p className='text-sm'>
+                Can I join a team or do I have to come with one?
+              </p>
+              <p className='text-[#D434FE] text-3xl'>+</p>
+            </div>
+            <div className='flex border-b-2 border-solid border-[#D434FE] justify-between items-center pb-1'>
+              <p className='text-sm'>What happens after the hackathon ends</p>
+              <p className='text-[#D434FE] text-3xl'>+</p>
+            </div>
+            <div className='flex border-b-2 border-solid border-[#D434FE] justify-between items-center pb-1'>
+              <p className='text-sm'>
+                Can I work on a project I started before the hackathon?
+              </p>
+              <p className='text-[#D434FE] text-3xl'>+</p>
+            </div>
+          </div>
+        </div>
+        <div className='w-[60%]  relative md:mt-0 mt-20 pt-5'>
+          <img
+            className='star star3  top-[55%] left-[2%]'
+            src={grayStar}
+            alt='gray star'
+          />
+          <img
+            className='star star1 top-[94%] left-[93%]'
+            src={whiteStar}
+            alt='white star'
+          />
+          <img
+            className='star star5 top-[15%] left-[17%]'
+            src={pinkStar}
+            alt='pink star'
+          />
+          <img
+            className='star star2 top-[2%] left-[47%]'
+            src={pinkStar}
+            alt='pink star'
+          />
+
+          <img
+            className='z-[2] relative'
+            src={manSittingCloud}
+            alt='a man holding a file and standing beside a woman '
+          />
+          <p className='question-mark question-mark-smaller absolute top-[3%] left-[8%]'>
+            ?
+          </p>
+          <p className='question-mark absolute top-[-10%] left-[30%]'>?</p>
+          <p className='question-mark question-mark-smaller absolute top-[-2%] left-[55%]'>
+            ?
+          </p>
+        </div>
+      </div>
+    </div>
   );
 };
 

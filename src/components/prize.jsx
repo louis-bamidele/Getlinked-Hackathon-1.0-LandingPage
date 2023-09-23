@@ -9,7 +9,7 @@ import silver from "../assets/silver_medal 1.png";
 import bronze from "../assets/bronze_medal 1.png";
 const prize = () => {
   return (
-    <div className='relative prize flex flex-col py-20'>
+    <div className='relative prize flex flex-col py-10 md:py-20'>
       <img
         className='star star3 top-[90%] left-[65%]  md:top-[85%] md:left-[78%]'
         src={grayStar}
@@ -43,20 +43,24 @@ const prize = () => {
       />
       <div className=' px-5 text-slate-50 text-center md:text-left flex justify-center items-center  md:justify-end md:items-end text-left md:mr-10 lg:mr-28'>
         <div>
-          <h3 className='pb-1 font-black text-4xl md:text-3xl'>Prizes and</h3>
-          <h3 className='pb-3 pink font-black text-4xl md:text-3xl'>Rewards</h3>
-          <p className='text-2xl md:text-base'>
+          <h3 className='md:pb-1 font-black text-[25px] md:text-3xl'>
+            Prizes and
+          </h3>
+          <h3 className='md:pb-3 pink font-black text-[25px] md:text-3xl'>
+            Rewards
+          </h3>
+          <p className='text-sm md:text-base'>
             Highlight of the prizes or rewards for winners and for participants.
           </p>
         </div>
       </div>
-      <div className='flex flex-col md:flex-row gap-3  justify-center  items-center md:items-end pt-20'>
+      <div className='flex flex-col md:flex-row gap-3  justify-center  items-center md:items-end p-5 md:pt-20'>
         <img
           className='w-[90%] md:w-[50%] lg:w-[40%] mb-28 md:mb-0 md:p-10 lg:p-0'
           src={cup}
           alt='a big cup for celebration'
         />
-        <div className='flex justify-center gap-7 w-[100%] md:w-[50%] p-10 mt-32 md:mt-0 '>
+        <div className='flex justify-center gap-7 w-[100%] md:w-[50%] md:p-10 mt-0 '>
           <div className='w-[30%] text-slate-50 pink-border relative h-min   px-0  pt-16 pb-10 md:w-[45%] lg:w-[30%] flex flex-col items-center justify-center'>
             <img
               className='max-w-none w-[100%] md:w-[100px] lg:w-[130px] xl:w-[150px] absolute bottom-[70%]'
