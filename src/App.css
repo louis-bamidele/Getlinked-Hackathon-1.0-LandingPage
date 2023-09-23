@@ -242,7 +242,7 @@ p {
     width: 65%;
   }
 }
-@media (max-width: 450px) {
+@media (min-width: 200px) {
   .first-hero-div {
     width: 75%;
   }
@@ -260,6 +260,19 @@ p {
     bottom: 200%;
   }
 }
+@media (min-width: 450px) {
+  .hero-h1::after {
+    top: 0;
+    right: 20%;
+    scale: 0.5;
+  }
+  .hero-c-text::after {
+    scale: 0.5;
+    left: -50%;
+    bottom: 200%;
+  }
+}
+
 /*end of  hero styles */
 /* contact Styles */
 
@@ -486,3 +499,16 @@ p {
   }
 }
 /* home timeline styles */
+
+/* footer */
+
+.footer-rights {
+  margin: 70px auto;
+  width: fit-content;
+}
+@media (max-width: 450px) {
+  .footer-rights {
+    margin: 0px auto;
+    width: fit-content;
+  }
+}
