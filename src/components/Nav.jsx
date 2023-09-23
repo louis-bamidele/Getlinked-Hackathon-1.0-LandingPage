@@ -9,7 +9,7 @@ const Nav = () => {
     menu.current.classList.toggle("BLOCK");
   };
   return (
-    <nav className='md:px-15 lg:mx-20 px-10 flex justify-between items-center text-white py-7 relative'>
+    <nav className='md:px-15 lg:mx-20 px-10 flex justify-between items-center text-white  relative'>
       <h1 className='heading-text cursor-pointer'>
         <Link to='/'>
           get<span className='linked'>linked</span>
@@ -42,7 +42,7 @@ const Nav = () => {
       </ul>
       <div
         ref={menu}
-        className='absolute top-0 right-0 hidden shadow-2xl rounded px-10 pt-1 pb-20'>
+        className='absolute z-[99] top-0 right-0 hidden shadow-2xl rounded px-10 pt-1 pb-20'>
         <div className='RELATIVE flex justify-start'>
           <svg
             onClick={handleClick}
