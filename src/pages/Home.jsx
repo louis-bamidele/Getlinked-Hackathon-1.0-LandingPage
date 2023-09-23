@@ -1,9 +1,9 @@
 import React, { useState, useEffect, useRef } from "react";
 import Nav from "../components/Nav";
+import Timeline from "../components/timeline";
 import star from "../assets/star.png";
 import vector4 from "../assets/Vector 4.svg";
-import creative1 from "../assets/Creative 1.png";
-import chain from "../assets/chain-9365116-7621444.png";
+import starpu from "../assets/star pu.png";
 import heroGlobeImage from "../assets/Image 1.png";
 import theBigIdea from "../assets/the big idea 1.png";
 import arrow from "../assets/arrow.png";
@@ -57,24 +57,33 @@ const Home = () => {
       return () => clearTimeout(timer);
     }
   }, [text]);
+
   return (
     <div className="App">
       <Nav />
       <hr className="hr" />
       <div className="font-bold mx-auto text-white lg:pl-20 lg:mx:0 lg:w-auto">
-        <h2 className="text-[16px] text-center lg:w-auto lg:pt-4 lg:text-[25px] lg:pr-14 lg:text-right hero-h2">
+        <h2 className="text-[16px] text-center lg:w-auto pt-6 lg:pt-4 lg:text-[25px] lg:pr-14 lg:text-right hero-h2">
           igniting a Revolution in HR Innovation
         </h2>
-        <div className="pr:0 w-[90vw] m-auto lg:w-auto flex justify-between lg:pr-14 ">
-          <img className="star hero-star" src={star} alt="star" />
-          <img src={vector4} alt="curve line"></img>
+        <div className="pr:0 w-[75vw] h-[40px] lg:h-[auto] m-auto lg:w-auto flex justify-between lg:pr-14 ">
+          <img
+            className="lg:self-auto m-[auto] lg:m-[0] star hero-star self-end"
+            src={star}
+            alt="star"
+          />
+          <img
+            className="lg:self-auto self-start"
+            src={vector4}
+            alt="curve line self-end"
+          ></img>
         </div>
         <div className="flex flex-col lg:flex-row">
-          <div className="first-hero-div w-[85vw] lg:w-auto m-auto lg:m-0 text-center lg:text-left">
+          <div className="first-hero-div w-[75vw] lg:w-auto m-auto lg:m-0 text-center lg:text-left">
             <div className="relative">
               <h1
                 ref={heroMainTextRef}
-                className="mt-6 font-bold relative text-[2.5rem] lg:text-[3.7rem] leading-none hero-h1"
+                className="mt-6 font-bold relative text-[32px] lg:text-[3.7rem] leading-none hero-h1"
               >
                 {text.map((element, index) => (
                   <React.Fragment key={index}>{element}</React.Fragment>
@@ -82,14 +91,14 @@ const Home = () => {
               </h1>
             </div>
 
-            <p className="text-[13px lg:text-sm">
+            <p className="text-[13px] lg:text-sm">
               Participate in getlinked tech Hackathon 2023 stand a chance to win
               a Big prize
             </p>
             <button className="nav-text btn my-8 w-min  cursor-pointer">
               Register
             </button>
-            <div className="text-center m-auto lg:m-0 flex justify-between text-[48px] w-[214px] h-[64px] lg:text-[2rem] lg:w-[200px] lg:h-[85px]">
+            <div className="text-center m-auto lg:m-0 flex justify-between text-[38px] w-[214px] h-[64px] lg:text-[2rem] lg:w-[200px] lg:h-[85px]">
               <h1>
                 00<span className="text-sm">H</span>
               </h1>
@@ -350,6 +359,95 @@ const Home = () => {
           <p className="question-mark question-mark-smaller absolute top-[-2%] left-[55%]">
             ?
           </p>
+        </div>
+      </div>
+      <hr />
+      <div className="timeline py-[50px]">
+        <div className="lg:w-[27%] w-[80%] m-auto pb-[60px] lg:pb-[80px] text-center text-white">
+          <h3 className="text-bold text-xl lg:text-3xl ">Timeline</h3>
+          <p className="text-sm lg:text-initial">
+            Here is the breakdown of the time we anticipate using for the
+            upcoming event.
+          </p>
+        </div>
+        <div className="timeline-box text-xs/6 lg:text-base lg:mt-[50px] md:mt-[30px] relative lg:w-[80%] md:w-[80%] w-[78%] m-auto flex flex-col lg:flex-row md:flex-row justify-between lg:items-center md:items-center">
+          <div className="timeline-events relative text-left md:text-right lg:text-right">
+            <img
+              className="star star1 absolute top-[-40%] left-[2%] md:top-[-100%] md:left-[2%]"
+              src={starpu}
+              alt="purple star"
+            />
+            <h3>Hackathon Announcement</h3>
+            <p>
+              The getlinked tech hackathon 1.0 is formally announced to the
+              general public and teams begin to get ready to register
+            </p>
+          </div>
+          <Timeline date="1" />
+          <h3 className="timeline-events text-left">November 18, 2023</h3>
+        </div>
+        <div className="timeline-box text-xs/6 lg:text-base lg:mt-[50px] md:mt-[30px] relative lg:w-[80%] md:w-[80%] w-[78%] m-auto flex flex-col-reverse lg:flex-row md:flex-row justify-between lg:items-center md:items-center">
+          <h3 className="timeline-events text-left md:text-right lg:text-right">
+            November 18, 2023
+          </h3>
+          <Timeline date="2" />
+          <div className="timeline-events text-left">
+            <h3>Teams Registration begins</h3>
+            <p>
+              Interested teams can now show their interest in the getlinked tech
+              hackathon 1.0 2023 by proceeding to register
+            </p>
+          </div>
+        </div>
+        <div className="timeline-box relative text-xs/6 lg:text-base lg:mt-[50px] md:mt-[30px] relative lg:w-[80%] md:w-[80%] w-[78%] m-auto flex flex-col lg:flex-row md:flex-row justify-between lg:items-center md:items-center">
+          <div className="timeline-events text-left md:text-right lg:text-right">
+            <h3>Teams Registration ends</h3>
+            <p>Interested Participants are no longer Allowed to register</p>
+          </div>
+          <Timeline date="3" />
+          <h3 className="timeline-events text-left">November 18, 2023</h3>
+          <img
+            className="star star6 absolute top-[80%] right-[25%] md:top-[-50%] md:right-[10%] "
+            src={star}
+            alt="purple star"
+          />
+        </div>
+        <div className="timeline-box text-xs/6 lg:text-base lg:mt-[50px] md:mt-[30px] relative lg:w-[80%] md:w-[80%] w-[78%] m-auto flex flex-col-reverse lg:flex-row md:flex-row justify-between lg:items-center md:items-center">
+          <h3 className="timeline-events text-left md:text-right lg:text-right">
+            November 18, 2023
+          </h3>
+          <Timeline date="4" />
+          <div className="timeline-events text-left">
+            <h3>Announcement of the accepted teams and ideas</h3>
+            <p>
+              All teams whom idea has been accepted into getlinked tech
+              hackathon 1.0 2023 are formally announced
+            </p>
+          </div>
+        </div>
+        <div className="timeline-box text-xs/6 lg:text-base lg:mt-[50px] md:mt-[30px] relative lg:w-[80%] md:w-[80%] w-[78%] m-auto flex flex-col lg:flex-row md:flex-row justify-between lg:items-center md:items-center">
+          <div className="timeline-events text-left md:text-right lg:text-right">
+            <h3>Getlinked Hackathon 1.0 Offically Begins</h3>
+            <p>
+              Accepted teams can now proceed to build their ground breaking
+              skill driven solutions
+            </p>
+          </div>
+          <Timeline date="5" />
+          <h3 className="timeline-events text-left">November 18, 2023</h3>
+        </div>
+        <div className="timeline-box text-xs/6 lg:text-base lg:mt-[50px] md:mt-[30px] relative lg:w-[80%] md:w-[80%] w-[78%] m-auto flex flex-col-reverse lg:flex-row md:flex-row justify-between lg:items-center md:items-center">
+          <h3 className="timeline-events text-left md:text-right lg:text-right">
+            November 18, 2023
+          </h3>
+          <Timeline date="6" />
+          <div className="timeline-events text-left">
+            <h3>Demo Day</h3>
+            <p>
+              Teams get the opportunity to pitch their projects to judges. The
+              winner of the hackathon will also be announced on this day
+            </p>
+          </div>
         </div>
       </div>
     </div>
