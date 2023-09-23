@@ -107,7 +107,7 @@ const Home = () => {
               </h1>
             </div>
 
-            <p className="lg:w-[80%] text-[13px] lg:text-sm">
+            <p className="lg:w-[80%] text-[13px] lg:text-sm hero-p">
               Participate in getlinked tech Hackathon 2023 stand a chance to win
               a Big prize
             </p>

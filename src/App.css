@@ -227,9 +227,9 @@
 p {
   font-family: "Montserrat", sans-serif;
 }
-@media (min-width: 1250px) {
+@media (min-width: 1024px) {
   .first-hero-div {
-    width: 62%;
+    width: 100%;
     margin-top: 50px;
   }
   .hero-man-globe {
@@ -239,6 +239,11 @@ p {
 @media (min-width: 1300px) {
   .hero-man-globe {
     width: 65%;
+  }
+}
+@media (min-width: 1300px) {
+  .hero-p {
+    width: 60%;
   }
 }
 @media (max-width: 450px) {
