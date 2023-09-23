@@ -93,6 +93,9 @@ const Register = () => {
     setModel(false);
     document.body.style.overflow = "visible";
   };
+  const handlechild = (e) => {
+    e.stopPropagation();
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -289,7 +292,7 @@ const Register = () => {
       {model && (
         <div
           onClick={() => handleCloseModel()}
-          className='cursor-pointer absolute top-0 left-0  bg-[#150e28]/90 w-screen h-screen grid place-items-center'>
+          className='cursor-pointer z-[98] absolute top-0 left-0  bg-[#150e28]/90 w-screen h-screen grid place-items-center'>
           <img
             className='star left-[70%] top-[16%]  star1'
             src={purpleStar}
@@ -305,8 +308,9 @@ const Register = () => {
             src={grayStar}
             alt='gray star'
           />
-          <div className='flex flex-col gap-3 text-slate-50 rounded-lg p-10 m-10 border-[#d434fe] border-2 border-solid'>
-            {/* <div className='grid place-items-center h-44 w-full'> */}
+          <div
+            onClick={(e) => handlechild(e)}
+            className='relative z-[99]  cursor-arrow flex flex-col gap-3 text-slate-50 rounded-lg p-10 m-10 border-[#d434fe] border-2 border-solid'>
             <div className=' relative h-44 w-full '>
               <img
                 className='absolute top-0 left-[5%] md:left-[20%] '
@@ -319,7 +323,6 @@ const Register = () => {
                 alt='success man 3d graphic'
               />
             </div>
-            {/* </div> */}
 
             <p className='text-center text-base px-3'>
               Congratulations you have successfully Registered!
