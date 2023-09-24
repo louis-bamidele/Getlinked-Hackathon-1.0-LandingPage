@@ -26,6 +26,9 @@ import { motion } from "framer-motion";
 import "../App.css";
 import Introduction from "../components/Introduction";
 const Home = () => {
+  const [sec, setsec] = useState("");
+  const [min, setmin] = useState("");
+  const [hour, sethour] = useState("");
   const textToType = "Igniting a Revolution in HR Innovation";
   const [text, setText] = useState([]);
   const [index, setIndex] = useState(0);
@@ -41,6 +44,33 @@ const Home = () => {
       return () => clearTimeout(timer);
     }
   }, [text]);
+
+  var countDownDate = new Date("may 10, 2027 15:37:25").getTime();
+
+  const timer = setInterval(() => {
+    // get the cuurent time
+    var now = new Date().getTime();
+    // get the distnce between countdowndate and current date
+    var distance = countDownDate - now;
+    // time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor(
+      (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+    );
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    //  display the result on screen
+    setsec(seconds);
+    setmin(minutes);
+    sethour(hours);
+
+    // if the count down is finished
+    if (distance < 0) {
+      console.log(days);
+      clearInterval(timer);
+    }
+  }, 1000);
 
   return (
     <div className='App'>
@@ -97,13 +127,16 @@ const Home = () => {
 
             <div className='text-center m-auto lg:m-0 flex justify-between text-[38px] w-[214px] h-[64px] lg:text-[2rem] lg:w-[200px] lg:h-[85px]'>
               <h1>
-                00<span className='text-sm'>H</span>
+                {hour}
+                <span className='text-sm'>H</span>
               </h1>
               <h1>
-                00<span className='text-sm'>M</span>
+                {min}
+                <span className='text-sm'>M</span>
               </h1>
               <h1>
-                00<span className='text-sm'>S</span>
+                {sec}
+                <span className='text-sm'>S</span>
               </h1>
             </div>
           </div>
