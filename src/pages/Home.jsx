@@ -22,7 +22,7 @@ import vusual from "../assets/Screenshot__38_-removebg-preview.png";
 import listCheck from "../assets/list terms.svg";
 import padLock from "../assets/08 1.png";
 import secured from "../assets/vvect.png";
-
+import { motion } from "framer-motion";
 import "../App.css";
 import Introduction from "../components/Introduction";
 const Home = () => {
@@ -108,13 +108,17 @@ const Home = () => {
             </div>
           </div>
 
-          <div className='w-[95vw] m-auto lg:m-0 hero-man lg:pr-2.5'>
+          <motion.div
+            initial={{ x: "100vw" }}
+            animate={{ x: 0 }}
+            transition={{ duration: 1, ease: "easeInOut" }}
+            className='w-[95vw] m-auto lg:m-0 hero-man lg:pr-2.5'>
             <img
               className='hero-man-globe w-[100%] h-[auto] lg:m-auto lg:w-[70%] lg:h-[90%]'
               src={heroGlobeImage}
               alt='hero'
             />
-          </div>
+          </motion.div>
         </div>
       </div>
 
@@ -209,7 +213,6 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <hr />
       <div className='LAST'>
         <Prize />
         <div className=' text-slate-50 relative flex flex-col gap-3 p-10 md:p-20 py-32 items-center'>
@@ -276,6 +279,7 @@ const Home = () => {
             </div>
           </div>
         </div>
+        <hr />
         <div className='privacy relative flex flex-col lg:flex-row p-10 md:p-20'>
           <img
             className='star star2 top-[78%] left-[87%] md:top-[20%] md:left-[90%] '

@@ -9,10 +9,13 @@ import womanSitting from "../assets/7450159 1.png";
 import manStanding from "../assets/8046554 1.png";
 import circle from "../assets/Ellipse 2.svg";
 import manSittingCloud from "../assets/cwok_casual_21 1.png";
-
+import { useEffect, useRef, useState } from "react";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 const Introduction = () => {
   return (
     <div className='INTRODUCTION'>
+      <hr />
       <div className='relative  flex flex-col md:flex-row justify-between items-center gap-10 lg:gap-5 lg:px-36 md:px-10 py-10 '>
         <img
           className='star star3 top-[20%] left-[10%] md:top-[40%] md:left-[10%]'
@@ -43,8 +46,7 @@ const Introduction = () => {
         <div className='w-[70%] lg:w-[50%] text-slate-50 text-center md:text-left'>
           <h3 className='pb-1 font-black text-2xl md:text-3xl'>
             Introduction to getlinked
-          </h3>
-
+          </h3>{" "}
           <h3 className='pb-3 pink font-black text-2xl md:text-3xl'>
             tech Hackathon 1.0
           </h3>
@@ -58,6 +60,7 @@ const Introduction = () => {
           </p>
         </div>
       </div>
+      <hr />
       <div className='relative  rules-reg text-slate-50 flex flex-col-reverse md:flex-row justify-between items-center gap-10 lg:gap-5 lg:px-36 md:px-10 py-10 '>
         <img
           className='star star3 top-[20%] left-[10%] md:top-[20%] md:left-[25%]'
@@ -96,6 +99,7 @@ const Introduction = () => {
           />
         </div>
       </div>
+      <hr />
       <div className='relative flex flex-col md:flex-row justify-between items-center gap-10 lg:gap-5 lg:px-36 md:px-10 py-10 z-10'>
         <img
           className='star star1 top-[90%] left-[80%] md:top-[83%] md:left-[47%]'
@@ -165,6 +169,7 @@ const Introduction = () => {
           <button className='btn'>Read More</button>
         </div>
       </div>
+      <hr />
       <div className='relative flex flex-col md:flex-row justify-between items-center gap-10 lg:gap-5 lg:px-36 md:px-10 py-20 z-10'>
         <img
           className='star star4 top-[5%] left-[27%] md:top-[13%] md:left-[10%]'

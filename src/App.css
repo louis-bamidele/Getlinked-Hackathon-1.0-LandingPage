@@ -662,6 +662,11 @@ p {
   -o-border-radius: 5px;
 }
 hr {
+  border: none; /* Remove the default border */
+  height: 2px; /* Set the height of the line */
+  /* Set the line color */
+  margin: 20px 0; /* Add spacing above and below the line */
+
   color: rgba(255, 255, 255, 0.18);
   background-color: rgba(255, 255, 255, 0.18);
 }
