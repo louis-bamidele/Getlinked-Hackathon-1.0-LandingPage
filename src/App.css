@@ -312,15 +312,13 @@ p {
     margin-top: 50px;
   }
   .hero-man-globe {
-    width: 70%;
+    width: 100%;
   }
 }
 @media (min-width: 1300px) {
   .hero-man-globe {
-    width: 65%;
+    width: 100%;
   }
-}
-@media (min-width: 1300px) {
   .hero-p {
     width: 60%;
   }
