@@ -47,8 +47,17 @@ const Home = () => {
       <Nav />
 
       <hr className='hr' />
-      <div className='font-bold mx-auto HERO text-white lg:pl-20 lg:mx:0 lg:w-auto'>
-        <div></div>
+      <div className='relative font-bold mx-auto HERO text-white lg:pl-20 lg:mx:0 lg:w-auto'>
+        <img
+          className='star star3 top-[10%] left-[79%] md:top-[20%] md:left-[60%]'
+          src={grayStar}
+          alt='gray star'
+        />{" "}
+        <img
+          className='star star5 top-[32%] left-[78%] md:top-[65%] md:left-[50%]'
+          src={grayStar}
+          alt='gray star'
+        />
         <h2
           ref={heroMainTextRef}
           id='typing-text'
