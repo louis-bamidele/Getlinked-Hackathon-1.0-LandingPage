@@ -169,8 +169,25 @@ const Home = () => {
             upcoming event.
           </p>
         </div>
+        {/* <motion.div
+            initial={{ x: "100%" }}
+            whileInView={{ x: 0 }}
+            transition={{ duration: 0.5, ease: "easeInOut" }}
+            className="timeline-events text-left md:text-right lg:text-right"
+          >
+            <motion.h3
+            initial={{ x: "100%" }}
+            whileInView={{ x: 0 }}
+            transition={{ duration: 0.5, ease: "easeInOut" }}
+            className="timeline-events text-left md:text-right lg:text-right"
+          > */}
         <div className="timeline-box text-xs/6 lg:text-base lg:mt-[50px] md:mt-[30px] relative lg:w-[80%] md:w-[80%] w-[78%] m-auto flex flex-col lg:flex-row md:flex-row justify-between lg:items-center md:items-center">
-          <div className="timeline-events relative text-left md:text-right lg:text-right">
+          <motion.div
+            initial={{ x: "-100%" }}
+            whileInView={{ x: 0 }}
+            transition={{ duration: 0.5, ease: "easeInOut" }}
+            className="timeline-events relative text-left md:text-right lg:text-right"
+          >
             <img
               className="star star1 absolute top-[-40%] left-[2%] md:top-[-100%] md:left-[2%]"
               src={starpu}
@@ -181,30 +198,59 @@ const Home = () => {
               The getlinked tech hackathon 1.0 is formally announced to the
               general public and teams begin to get ready to register
             </p>
-          </div>
+          </motion.div>
           <Timeline date="1" />
-          <h3 className="timeline-events text-left">November 18, 2023</h3>
+          <motion.h3
+            initial={{ x: "100%" }}
+            whileInView={{ x: 0 }}
+            transition={{ duration: 0.5, ease: "easeInOut" }}
+            className="timeline-events text-left"
+          >
+            November 18, 2023
+          </motion.h3>
         </div>
         <div className="timeline-box text-xs/6 lg:text-base lg:mt-[50px] md:mt-[30px] relative lg:w-[80%] md:w-[80%] w-[78%] m-auto flex flex-col-reverse lg:flex-row md:flex-row justify-between lg:items-center md:items-center">
-          <h3 className="timeline-events text-left md:text-right lg:text-right">
+          <motion.h3
+            initial={{ x: "-100%" }}
+            whileInView={{ x: 0 }}
+            transition={{ duration: 0.5, ease: "easeInOut" }}
+            className="timeline-events text-left md:text-right lg:text-right"
+          >
             November 18, 2023
-          </h3>
+          </motion.h3>
           <Timeline date="2" />
-          <div className="timeline-events text-left">
+          <motion.div
+            initial={{ x: "100%" }}
+            whileInView={{ x: 0 }}
+            transition={{ duration: 0.5, ease: "easeInOut" }}
+            className="timeline-events text-left"
+          >
             <h3>Teams Registration begins</h3>
             <p>
               Interested teams can now show their interest in the getlinked tech
               hackathon 1.0 2023 by proceeding to register
             </p>
-          </div>
+          </motion.div>
         </div>
         <div className="timeline-box relative text-xs/6 lg:text-base lg:mt-[50px] md:mt-[30px] relative lg:w-[80%] md:w-[80%] w-[78%] m-auto flex flex-col lg:flex-row md:flex-row justify-between lg:items-center md:items-center">
-          <div className="timeline-events text-left md:text-right lg:text-right">
+          <motion.div
+            initial={{ x: "-100%" }}
+            whileInView={{ x: 0 }}
+            transition={{ duration: 0.5, ease: "easeInOut" }}
+            className="timeline-events text-left md:text-right lg:text-right"
+          >
             <h3>Teams Registration ends</h3>
             <p>Interested Participants are no longer Allowed to register</p>
-          </div>
+          </motion.div>
           <Timeline date="3" />
-          <h3 className="timeline-events text-left">November 18, 2023</h3>
+          <motion.h3
+            initial={{ x: "100%" }}
+            whileInView={{ x: 0 }}
+            transition={{ duration: 0.5, ease: "easeInOut" }}
+            className="timeline-events relative text-left"
+          >
+            November 18, 2023
+          </motion.h3>
           <img
             className="star star6 absolute top-[80%] right-[25%] md:top-[-50%] md:right-[10%] "
             src={star}
@@ -212,41 +258,73 @@ const Home = () => {
           />
         </div>
         <div className="timeline-box text-xs/6 lg:text-base lg:mt-[50px] md:mt-[30px] relative lg:w-[80%] md:w-[80%] w-[78%] m-auto flex flex-col-reverse lg:flex-row md:flex-row justify-between lg:items-center md:items-center">
-          <h3 className="timeline-events text-left md:text-right lg:text-right">
+          <motion.h3
+            initial={{ x: "-100%" }}
+            whileInView={{ x: 0 }}
+            transition={{ duration: 0.5, ease: "easeInOut" }}
+            className="timeline-events text-left md:text-right lg:text-right"
+          >
             November 18, 2023
-          </h3>
+          </motion.h3>
           <Timeline date="4" />
-          <div className="timeline-events text-left">
+          <motion.div
+            initial={{ x: "100%" }}
+            whileInView={{ x: 0 }}
+            transition={{ duration: 0.5, ease: "easeInOut" }}
+            className="timeline-events text-left"
+          >
             <h3>Announcement of the accepted teams and ideas</h3>
             <p>
               All teams whom idea has been accepted into getlinked tech
               hackathon 1.0 2023 are formally announced
             </p>
-          </div>
+          </motion.div>
         </div>
         <div className="timeline-box text-xs/6 lg:text-base lg:mt-[50px] md:mt-[30px] relative lg:w-[80%] md:w-[80%] w-[78%] m-auto flex flex-col lg:flex-row md:flex-row justify-between lg:items-center md:items-center">
-          <div className="timeline-events text-left md:text-right lg:text-right">
+          <motion.div
+            initial={{ x: "-100%" }}
+            whileInView={{ x: 0 }}
+            transition={{ duration: 0.5, ease: "easeInOut" }}
+            className="timeline-events text-left md:text-right lg:text-right"
+          >
             <h3>Getlinked Hackathon 1.0 Offically Begins</h3>
             <p>
               Accepted teams can now proceed to build their ground breaking
               skill driven solutions
             </p>
-          </div>
+          </motion.div>
           <Timeline date="5" />
-          <h3 className="timeline-events text-left">November 18, 2023</h3>
+          <motion.h3
+            initial={{ x: "100%" }}
+            whileInView={{ x: 0 }}
+            transition={{ duration: 0.5, ease: "easeInOut" }}
+            className="timeline-events text-left"
+          >
+            November 18, 2023
+          </motion.h3>
         </div>
         <div className="timeline-box text-xs/6 lg:text-base lg:mt-[50px] md:mt-[30px] relative lg:w-[80%] md:w-[80%] w-[78%] m-auto flex flex-col-reverse lg:flex-row md:flex-row justify-between lg:items-center md:items-center">
-          <h3 className="timeline-events text-left md:text-right lg:text-right">
+          <motion.h3
+            initial={{ x: "-100%" }}
+            whileInView={{ x: 0 }}
+            transition={{ duration: 0.5, ease: "easeInOut" }}
+            className="timeline-events text-left md:text-right lg:text-right"
+          >
             November 18, 2023
-          </h3>
+          </motion.h3>
           <Timeline date="6" />
-          <div className="timeline-events text-left">
+          <motion.div
+            initial={{ x: "100%" }}
+            whileInView={{ x: 0 }}
+            transition={{ duration: 0.5, ease: "easeInOut" }}
+            className="timeline-events text-left"
+          >
             <h3>Demo Day</h3>
             <p>
               Teams get the opportunity to pitch their projects to judges. The
               winner of the hackathon will also be announced on this day
             </p>
-          </div>
+          </motion.div>
         </div>
       </div>
       <div className="LAST">

@@ -1,19 +1,12 @@
-/* .app {
-  background-image: url(./assets/Purple-Lens-Flare-PNG.png),
-    url(./assets/Purple-Lens-Flare-PNG2.png),
-    url(./assets/Purple-Lens-Flare-PNG3.png),
-    url(./assets/Purple-Lens-Flare-PNG4.png),
-    url(./assets/Purple-Lens-Flare-PNG5.png),
-    url(./assets/Purple-Lens-Flare-PNG6.png),
-    url(./assets/Purple-Lens-Flare-PNG7.png),
-    url(./assets/Purple-Lens-Flare-PNG8.png),
-    url(./assets/Purple-Lens-Flare-PNG9.png),
-    url(./assets/Purple-Lens-Flare-PNG10.png);
-  background-position: 10% -1%, 10% 16%, 100% 21%, 0% 28%, 100% 34%, 0% 60%,
-    10% 120%, 10% 120%, 10% 120%, 10% 120%;
-  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat,
-    no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
-} */
+html {
+  overflow-x: hidden;
+}
+body {
+  position: relative;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
 .CENTER {
   position: absolute;
   left: 50%;
