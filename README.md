@@ -9,7 +9,6 @@
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
 
 ## Overview
 
@@ -40,47 +39,9 @@ http://getLinked.ai is proudly sponsoring this coding challenge and it’s open 
 ### Built with
 
 - React
-- passsport
-- mongoDB
-- Stripe
+- tailwind
 - Motion Framer
-- useQuary and alot more
+- html5
+- css3
 
-### What I learned
 
-I didn't know how to use Stripe, with this project I learned how to do that.
-
-See code snippets, see below:
-
-```Stripe
- app.post("/create-checkout-session", async (req, res) => {
-  let listOfData = [];
-  let email = req.body.details.user.email;
-  req.body.cart.map((item) => {
-    let unitAmount = convertToUnitAmount(item.newPrice);
-    listOfData.push({
-      price_data: {
-        currency: "usd",
-        product_data: {
-          name: item.name,
-          images: item.images,
-        },
-        unit_amount: unitAmount,
-      },
-      quantity: item.numOfOrder,
-      adjustable_quantity: {
-        enabled: true,
-      },
-    });
-  });
-
-  const session = await stripe.checkout.sessions.create({
-    line_items: listOfData,
-    mode: "payment",
-    success_url: `${YOUR_DOMAIN}/successful`,
-    cancel_url: `${YOUR_DOMAIN}/checkout`,
-    customer_email: email,
-  });
-  res.send(session);
-})
-```
